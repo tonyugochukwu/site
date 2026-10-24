@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Tech Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">◆</span>
+        Portfolio
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="projects.html" class="mobile-link">Projects</a>
+    <a href="skills.html" class="mobile-link">Skills</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-tag reveal">About Me</span>
+      <h1 class="page-title reveal">Who I Am</h1>
+      <p class="page-desc reveal">A cybersecurity professional with a strong focus on design and development.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container about-grid">
+      
+      <!-- IMAGE: Centered with object-position -->
+      <div class="about-img-frame reveal">
+        <img src="me2.jpg" alt="Okoye Anthony" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;" />
+      </div>
+
+      <div class="about-content">
+        <p class="about-text reveal">
+          I am a cybersecurity professional specializing in penetration testing, 
+          with complementary expertise in modern web design and visual systems. 
+          I combine offensive security knowledge with clean engineering and design 
+          to deliver solutions that are both secure and compelling.
+        </p>
+
+        <ul class="about-meta reveal">
+          <li><strong>Name</strong> <span>Okoye Anthony</span></li>
+          <li><strong>Email</strong> <span>anthonyugonnaokoye@gmail.com</span></li>
+          <li><strong>Location</strong> <span>Enugu, Nigeria</span></li>
+          <li><strong>Availability</strong> <span class="available">Open to projects</span></li>
+        </ul>
+
+        <a href="Okoye_Anthony_Ugonna_CV.pdf" download class="btn btn-primary reveal">
+          Download CV
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" style="background: var(--bg-2);">
+    <div class="container">
+      <div class="section-header">
+        <span class="page-tag reveal">Testimonials</span>
+        <h2 class="page-title reveal">What People Say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card reveal">
+          <p>“Outstanding attention to detail. Identified vulnerabilities that other testers completely missed.”</p>
+          <footer>
+            <strong>Alex Rivera</strong>
+            <span>CTO, SecureCore</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal">
+          <p>“Thorough, professional, and easy to work with. Delivered a comprehensive security assessment on time.”</p>
+          <footer>
+            <strong>Jordan Lee</strong>
+            <span>Product Manager, FinEdge</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal">
+          <p>“Top-tier design and development skills. Built our platform with excellent UX and clean, maintainable code.”</p>
+          <footer>
+            <strong>Sam Patel</strong>
+            <span>Founder, CreativeLab</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Anthony Okoye. Crafted with precision.</p>
+      <div class="footer-links">
+        <a href="https://github.com/tonyugochukwu/security-writeups" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/anthony-okoye-148146423" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
